@@ -1,0 +1,21 @@
+{
+    "errCode": "e0000",
+    "body": [
+        {
+			"companyCode": "",
+			"companyName": "",
+			"createTime": "",
+			"id": 0,
+			"logoImg": "",
+			"needGold": 5,
+			"packetId": "",
+			"packetImg": "",
+			"packetLeftNum": "1",
+			"packetName": "",
+			"packetNum": "",
+			"packetType": "",
+			"packetWorth": 0
+		}
+    ],
+    "errMessage": "请定义mock数据"
+}

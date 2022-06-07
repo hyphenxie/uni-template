@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+		<link rel="stylesheet" href="<%= BASE_URL %>static/index.css" />
+		<script>
+			(function(doc, win) {
+				function adjustSystemFontSize() {
+					// 解决微信调整字体适配
+					if (isAndroid) {
+						if (typeof window.WeixinJSBridge === 'object' && typeof window.WeixinJSBridge.invoke ===
+							'function') {
+							handleFontSize()
+						} else {
+							document.addEventListener('WeixinJSBridgeReady', handleFontSize, false)
+						}
+
+						function handleFontSize() {
+							// 设置网页字体为默认大小
+							window.WeixinJSBridge.invoke('setFontSizeCallback', {
+								fontSize: 0
+							})
+							// 重写设置网页字体大小的事件
+							window.WeixinJSBridge.on('menu:setfont', function () {
+								WeixinJSBridge.invoke('setFontSizeCallback', {
+									fontSize: 0
+								})
+							})
+						}
+					} else {
+						const style = document.createElement('style')
+						style.innerHTML = 'body {-webkit-text-size-adjust: 100% !important;}'
+						document.documentElement.appendChild(style)
+					}
+				}
+				adjustSystemFontSize()
+			})(document, window);
+		</script>
+	</head>
+	<body>
+		<!-- 该文件为 H5 平台的模板 HTML，并非应用入口，请勿直接运行此文件。 -->
+		<!-- 详见文档：https://uniapp.dcloud.io/collocation/manifest?id=h5-template -->
+		<noscript>
+			<strong>Please enable JavaScript to continue.</strong>
+		</noscript>
+		<div id="app"></div>
+	</body>
+	<script type="text/javascript" src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script>
+	<script>
+		// 初始化
+		var vConsole = new VConsole();
+	</script>
+</html>

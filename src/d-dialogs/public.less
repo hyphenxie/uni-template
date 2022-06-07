@@ -1,0 +1,137 @@
+/* 完整的弹窗组成
+.dialog-content
+    .dialog-header
+    .dialog-title
+    .dialog-subtitle
+    .dialog-img
+    .dialog-tips
+    .dialog-button
+    .dialog-close
+*/
+// 单行文字设置行高为1，使用间距控制距离
+.text1 {
+    // 无非就是行高和间距
+    // 行高默认1
+    // 间距
+}
+.dialog-content {
+    position: relative;
+    z-index: 3;
+    box-sizing: border-box;
+    width: 470upx !important;
+    background: linear-gradient(0deg, #FFD792 0%, #FFECD7 100%);
+    padding-top: 40upx;
+    padding-bottom: 20upx;
+    font-size: 30upx;
+    font-weight: 400;
+    color: #B74913;
+    border-radius: 16upx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 圆角属性测试 */
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: linear-gradient(0deg, #FFD792 0%, #FFECD7 100%);
+        left: -8upx;
+        top: -8upx;
+        right: -8upx;
+        bottom: -8upx;
+        border-radius: inherit;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        background: linear-gradient(0deg, #D22216 18%, #F59527 100%);
+        left: -16upx;
+        top: -16upx;
+        right: -16upx;
+        bottom: -16upx;
+        border-radius: inherit;
+    }
+
+}
+
+// 弹窗公共样式---头部装饰
+.dialog-header {
+    position: absolute;
+    left: 50%;
+    top: -190upx;
+    transform: translateX(-50%) translateY(-130upx);
+    width: 750upx;
+    height: 760upx;
+    z-index: 2;
+    box-sizing: border-box;
+    background-image: url('https://dlcdn.cdollar.cn/frontend/projects/dollar-lhhd/dialog-header-v4.png');
+    background-size: 100% auto;
+    text-align: center;
+    font-size: 34upx;
+    font-weight: bold;
+    color: #FAEDE1;
+    padding-top: 280upx;
+}
+.dialog-top-element{
+    position: relative;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, #FFD792 0%, #FFECD7 100%);
+    width: 470upx !important;
+}
+
+.dialog-body {
+    flex: 1;
+    font-size: 28upx;
+    // .flex-col;
+    // .cross-center;
+    line-height: 1.5;
+    text-align: center;
+    color: #666;
+}
+
+.dialog-title {
+    margin-top: -50upx;
+    text-align: center;
+    font-size: 34upx;
+    font-family: Source Han Sans CN, serif;
+    font-weight: bold;
+    color: #FAEDE1;
+}
+
+// 弹窗公共样式---按钮
+.dialog-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 10upx;
+    margin: 0 auto;
+    font-size: 38upx;
+    font-weight: 600;
+    color: #E92E1B;
+}
+
+// 弹窗公共样式---关闭按钮
+.dialog-close {
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50upx);
+    background-image: url('~images/common/close.png');
+    width: 60upx;
+    height: 60upx;
+    background-size: cover;
+}
+
+.dialog-tips {
+    text-align: center;
+    font-size: 28upx;
+    font-weight: bold;
+    color: #8C291C;
+}

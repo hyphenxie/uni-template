@@ -1,0 +1,142 @@
+{
+  "name": "dollar-uniapp-project",
+  "namespaceId": "3",
+  "version": "0.0.1",
+  "description": "uni模板H5Test",
+  "private": true,
+  "scripts": {
+    "test": "node ./plugins/test",
+    "mock": "node ./plugins/mockServer/core.js",
+    "serve": "npm run dev:h5",
+    "build": "npm run build:h5",
+    "build:custom": "cross-env NODE_ENV=production uniapp-cli custom",
+    "dev:custom": "cross-env NODE_ENV=development uniapp-cli custom",
+    "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build && npm run beforePublishd5",
+    "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5  vue-cli-service uni-serve",
+    "build:mp-alipay": "cross-env NODE_ENV=production UNI_PLATFORM=mp-alipay vue-cli-service uni-build",
+    "dev:mp-alipay": "cross-env NODE_ENV=development UNI_PLATFORM=mp-alipay vue-cli-service uni-build --watch",
+    "build:mp-weixin": "cross-env NODE_ENV=production UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
+    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "dev:h51": "cross-env NODE_ENV=development UNI_PLATFORM=h5 TARGET=fengdie vue-cli-service uni-serve",
+    "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
+    "beforeBuild": "node ./plugins/beforeBuild/index",
+    "add-dialog": "node ./plugins/add-dialog/index",
+    "add-component": "node ./plugins/add-component/index",
+    "add-apiList": "node ./plugins/add-apiList/index",
+    "add-page": "node ./plugins/add-page/index",
+    "beforePublishd5": "node ./plugins/beforePublishD5",
+    "publishd5": "npm run beforePublishd5 && npm run d5 -p"
+  },
+  "dependencies": {
+    "@birdman_jp/dollar-request": "^1.0.0",
+    "@dcloudio/uni-app-plus": "^2.0.0-26920200421006",
+    "@dcloudio/uni-h5": "^2.0.0-26920200421006",
+    "@dcloudio/uni-helper-json": "*",
+    "@dcloudio/uni-mp-alipay": "^2.0.0-26920200421006",
+    "@dcloudio/uni-mp-baidu": "^2.0.0-26920200421006",
+    "@dcloudio/uni-mp-qq": "^2.0.0-26920200421006",
+    "@dcloudio/uni-mp-toutiao": "^2.0.0-26920200421006",
+    "@dcloudio/uni-mp-weixin": "^2.0.0-26920200421006",
+    "@dcloudio/uni-quickapp-light": "^2.0.0-26920200421006",
+    "@dcloudio/uni-quickapp-vue": "^2.0.0-26920200421006",
+    "@dcloudio/uni-stat": "^2.0.0-26920200421006",
+    "axios": "^0.19.1",
+    "axios-miniprogram-adapter": "^0.2.4",
+    "babel-eslint": "^8.0.3",
+    "dayjs": "^1.9.6",
+    "flyio": "^0.6.14",
+    "fs-extra": "^9.1.0",
+    "handlebars": "^4.7.6",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.20",
+    "md5": "^2.3.0",
+    "moment": "^2.24.0",
+    "regenerator-runtime": "^0.12.1",
+    "save": "^2.4.0",
+    "umtrack-alipay": "^2.6.2",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@birdman_jp/webpack-spritesmith": "^1.1.1",
+    "@dcloudio/uni-cli-shared": "^2.0.0-26920200421006",
+    "@dcloudio/uni-migration": "^2.0.0-26920200421006",
+    "@dcloudio/uni-template-compiler": "^2.0.0-26920200421006",
+    "@dcloudio/vue-cli-plugin-hbuilderx": "^2.0.0-26920200421006",
+    "@dcloudio/vue-cli-plugin-uni": "^2.0.0-26920200421006",
+    "@dcloudio/vue-cli-plugin-uni-optimize": "^2.0.0-26920200421006",
+    "@dcloudio/webpack-uni-mp-loader": "^2.0.0-26920200421006",
+    "@dcloudio/webpack-uni-pages-loader": "^2.0.0-26920200421006",
+    "@types/html5plus": "latest",
+    "@types/uni-app": "latest",
+    "@vue/cli-plugin-babel": "^3.5.1",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^4.1.2",
+    "@vue/reactivity": "^3.0.5",
+    "acorn": "^6.3.0",
+    "alipay-dev": "^0.4.22",
+    "babel-plugin-import": "^1.12.2",
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "cross-env": "^5.2.1",
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "inquirer": "^7.3.3",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "mockjs": "^1.1.0",
+    "postcss-comment": "^2.0.0",
+    "prompt": "^1.0.0",
+    "style-resources-loader": "^1.3.3",
+    "tinify": "^1.6.0-beta.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-spritesmith": "^1.1.0",
+    "webpack-spritesmith-jp": "^1.1.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "standard"
+    ],
+    "rules": {
+      "indent": [
+        1,
+        4
+      ],
+      "no-console": "off",
+      "no-tabs": "off",
+      "prefer-promise-reject-errors": "off",
+      "no-async-promise-executor": "off",
+      "no-new": "off",
+      "no-unused-vars": "off",
+      "comma-dangle": "off",
+      "vue/no-unused-components": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "globals": {
+      "uni": true,
+      "my": true
+    }
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.4",
+    "ios >= 8"
+  ],
+  "uni-app": {
+    "scripts": {}
+  }
+}

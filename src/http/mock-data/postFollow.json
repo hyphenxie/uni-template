@@ -1,0 +1,7 @@
+{
+    "errCode": "e0000",
+    "body": {
+        "follow": "YES"
+    },
+    "errMessage": "请定义mock数据"
+}

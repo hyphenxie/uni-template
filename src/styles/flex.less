@@ -1,0 +1,71 @@
+@import './flex-box.less';
+@import './flex-item.less';
+/* 容器布局辅助css类 */
+// 原子容器
+// 常用组合容器
+
+.col-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row-box {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 主轴居中
+.main-center {
+  display: flex;
+  justify-content: center;
+}
+
+// 侧轴居中
+.cross-center {
+  display: flex;
+  align-items: center;
+}
+
+.cross-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-between {
+  display: flex;
+  justify-content: space-between;
+}
+.main-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cross-between {
+  display: flex;
+  align-items: space-between;
+}
+
+.flex-item-fix {
+  flex-shrink: 0;
+  flex-grow: 0;
+}

@@ -1,0 +1,134 @@
+@import './animations.less'; // 动画
+@import './flex.less';
+@import './gap.less';
+@import './sprite/index.less';
+
+.common-frame {
+    width: 100%;
+    .flex-col;
+    .cross-center;
+    .common-frame-title {
+        .title-decorator;
+        font-size: 42upx;
+        font-weight: bold;
+        color: #F12613;
+        color: #FFED9F;
+        margin-bottom: 25upx;
+    }
+
+    .common-frame-subtitle {
+        font-size: 24upx;
+        font-weight: 400;
+        color: #FFF4D6;
+        opacity: 0.8;
+        margin-bottom: 25upx;
+    }
+    .common-frame-subtitle-b {
+        .flex-center;
+        display: inline-flex;
+        height: 44upx;
+        border-radius: 22upx;
+        border: 2upx solid #FEF5AB;
+        background: linear-gradient(90deg, #FD8F45 0%, #E03917 85%);
+        box-shadow: 0px 3upx 9upx 0px rgba(255, 133, 25, 0.76);
+        padding: 0 20upx;
+        font-size: 22upx;
+        font-weight: 500;
+        color: #FFFEFE;
+        margin-bottom: 20upx;
+    }
+}
+
+.common-button,
+.common-button2,
+.common-button-gray,
+.common-button-sm,
+.common-button-sm-gray {
+    background-image: url('~@/images/common/common-button-v4.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 407upx;
+    height: 112upx;
+    line-height: 100upx;
+    // .flex-center;
+    text-align: center;
+    font-size: 34upx;
+    font-weight: bold;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    position: relative;
+}
+// 标题左右带装饰
+.title-decorator {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: block;
+        background-image: url('~@/images/common/left-title-decorator.png');
+        background-size: cover;
+        width: 87upx;
+        height: 30upx;
+        margin-right: 10upx;
+        // transform: rotateY(180deg);
+        transform-origin: center;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        background-size: cover;
+        background-image: url('~@/images/common/right-title-decorator.png');
+        width: 87upx;
+        height: 30upx;
+        margin-left: 10upx;
+    }
+}
+
+// 聊天气派
+.msg-bubble, .common-msg-bubble {
+    .flex-center;
+    display: inline-flex;
+    border: 2upx solid #FFF;
+    background: linear-gradient(to bottom, #FD8F45 0%, #E03917 100%);
+    box-shadow: 0px 3upx 9upx 0px rgba(255, 133, 25, 0.76);
+    border-radius: 27upx;
+    padding: 6upx 20upx;
+    font-size: 30upx;
+    font-weight: 500;
+    color: #FFFEFE;
+    pointer-events: none;
+    white-space: nowrap;
+    &.sm {
+        font-size: 24upx;
+    }
+    &.theme-red {
+        background: linear-gradient(to bottom, #F42819 0%, #FB6167 100%);
+    }
+}
+
+// 自带“元”后缀
+.money {
+    &::after {
+        content: '元';
+        font-size: .7em;
+    }
+}
+
+// 强调文案
+.emphasize {
+    color: #FEF3C4;
+    font-weight: bold;
+
+    &.lg {
+        font-size: @fs-lg;
+    }
+}
+
+.rotate-180 {
+    transform-origin: center;
+    transform: rotateZ(180deg);
+}

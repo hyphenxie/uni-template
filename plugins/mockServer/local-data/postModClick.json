@@ -1,0 +1,28 @@
+{
+  "errCode": "e0000",
+  "body": {
+    "award": {
+      "awardName": "测试奖品",
+      "awardType": "",
+      "awardWay": "",
+      "awardWorth": 10,
+      "costCards": 0,
+      "createTime": "",
+      "days": "",
+      "id": 0,
+      "updateTime": "",
+      "userId": ""
+    },
+    "clickLog": {
+      "broadStatus": 0,
+      "createTime": "",
+      "days": "",
+      "id": 0,
+      "plateType": "",
+      "relyId": 0,
+      "userId": ""
+    },
+    "type": ""
+  },
+  "errMessage": "请定义mock数据"
+}

@@ -1,0 +1,186 @@
+{
+  "body": {
+    "activityStatus": "NORMAL",
+    "bannerList": [
+      {
+        "bannerImg": "",
+        "bannerLink": "",
+        "bannerRate": 0,
+        "cardNum": "",
+        "createTime": "",
+        "id": 0,
+        "positionId": 0,
+        "showStatus": 1
+      },
+      {
+        "bannerImg": "",
+        "bannerLink": "",
+        "bannerRate": 0,
+        "cardNum": "",
+        "createTime": "",
+        "id": 0,
+        "positionId": 0,
+        "showStatus": 0
+      },
+      {
+        "bannerImg": "",
+        "bannerLink": "",
+        "bannerRate": 0,
+        "cardNum": "",
+        "createTime": "",
+        "id": 0,
+        "positionId": 0,
+        "showStatus": 0
+      },
+      {
+        "bannerImg": "",
+        "bannerLink": "",
+        "bannerRate": 0,
+        "cardNum": "",
+        "createTime": "",
+        "id": 0,
+        "positionId": 0,
+        "showStatus": 0
+      },
+      {
+        "bannerImg": "",
+        "bannerLink": "",
+        "bannerRate": 0,
+        "cardNum": "",
+        "createTime": "",
+        "id": 0,
+        "positionId": 0,
+        "showStatus": 0
+      },
+      {
+        "bannerImg": "",
+        "bannerLink": "",
+        "bannerRate": 0,
+        "cardNum": "",
+        "createTime": "",
+        "id": 0,
+        "positionId": 0,
+        "showStatus": 0
+      }
+    ],
+    "broadList": [
+      {
+        "broadImg": "",
+        "broadLink": "alipays://platformapi/startapp?appId=2021001151654332&page=pages%2Flive-room%2Flive-room%3Fid%3D285534412861%26userId%3D2208563293007%26liveSource%3Dwshop_backstage",
+        "broadName": "",
+        "broadType": "1",
+        "broadStatus": 0,
+        "watchStatus": 0,
+        "companyCode": "",
+        "createTime": "",
+        "id": 0,
+        "positionId": 0,
+        "showStatus": 0
+      },
+      {
+        "broadImg": "",
+        "broadLink": "alipays://platformapi/startapp?appId=2021001151654332&page=pages%2Flive-room%2Flive-room%3Fid%3D285534412861%26userId%3D2208563293007%26liveSource%3Dwshop_backstage",
+        "broadName": "",
+        "broadType": "2",
+        "broadStatus": 0,
+        "watchStatus": 0,
+        "companyCode": "",
+        "createTime": "",
+        "id": 0,
+        "positionId": 0,
+        "showStatus": 0
+      }
+    ],
+    "fundList": [
+      {
+        "createTime": "",
+        "fundCode": "163411",
+        "fundInterval": "j1n",
+        "fundName": "兴全精选混合",
+        "fundType": "0",
+        "subNum": "1000",
+        "fundSlogan": "fundSloganfundSlogan",
+        "fundLabel": "中风险",
+        "companyName": "兴全基金",
+        "id": 0,
+        "packetId": "",
+        "packetImg": "",
+        "packetName": "",
+        "packetNum": "",
+        "packetStatus": 1,
+        "packetWorth": 0,
+        "positionId": 0
+      },
+      {
+        "createTime": "",
+        "fundCode": "",
+        "fundInterval": "",
+        "fundName": "fundName111222",
+        "id": 0,
+        "packetId": "",
+        "packetImg": "",
+        "packetName": "",
+        "packetNum": "",
+        "packetStatus": 0,
+        "packetWorth": 0,
+        "positionId": 0
+      },
+      {
+        "createTime": "",
+        "fundCode": "",
+        "fundInterval": "",
+        "fundName": "fundName111333",
+        "id": 0,
+        "packetId": "",
+        "packetImg": "",
+        "packetName": "",
+        "packetNum": "",
+        "packetStatus": 0,
+        "packetWorth": 0,
+        "positionId": 0
+      },
+      {
+        "createTime": "",
+        "fundCode": "",
+        "fundInterval": "",
+        "fundName": "fundName111444",
+        "id": 0,
+        "packetId": "",
+        "packetImg": "",
+        "packetName": "",
+        "packetNum": "",
+        "packetStatus": 0,
+        "packetWorth": 0,
+        "positionId": 0
+      },
+      {
+        "createTime": "",
+        "fundCode": "",
+        "fundInterval": "",
+        "fundName": "fundName111555",
+        "id": 0,
+        "packetId": "",
+        "packetImg": "",
+        "packetName": "",
+        "packetNum": "",
+        "packetStatus": 0,
+        "packetWorth": 0,
+        "positionId": 0
+      }
+    ],
+    "raiderImg": "",
+    "ruleImg": "",
+    "user": {
+      "cardNum": 990,
+      "createTime": "",
+      "days": "",
+      "drawTimes": 0,
+      "inviteNum": 0,
+      "packetNum": 0,
+      "userId": ""
+    },
+    "userId": ""
+  },
+  "errCode": "e0000",
+  "errMessage": ""
+}

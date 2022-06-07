@@ -1,0 +1,20 @@
+variables:
+  SCRIPT_PATH: $CI_PROJECT_DIR/ci
+
+auto_test:
+  stage: build
+  script: 
+    - chmod -R 755 $SCRIPT_PATH
+    - dos2unix $SCRIPT_PATH/*
+    - ci/auto_test.sh
+  only:
+    - master_v2
+
+sonar_analyze:
+  stage: build
+  script:
+    - chmod -R 755 $SCRIPT_PATH
+    - dos2unix $SCRIPT_PATH/*
+    - ci/sonar_analyze.sh
+  only:
+    - master_v2

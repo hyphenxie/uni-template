@@ -1,0 +1,46 @@
+{
+    "errCode": "e0000",
+    "errMessage": "ok",
+    "body": {
+      "result": 1,
+      "award": {
+        "id": 91,
+        "userId": "2088802298938696",
+        "awardWorth": 0.01,
+        "awardName": "0.01元财运金",
+        "awardType": "ALIPAY_VOUCHER",
+        "awardWay": "DRAW",
+        "costCards": 0,
+        "days": "20201113",
+        "url": "alipays://platformapi/startapp?appId=20000021&b=c&partnerId=2088221988534008&serialNumber=2020111300073002693806X4IVXI",
+        "companyCode": "GTRYFUND",
+        "companyName": "国投瑞银基金",
+        "createTime": "2020-11-13 14:32:33",
+        "updateTime": "2020-11-13 14:32:33"
+      },
+      "fund": {
+        "id": 9,
+        "fundType": "1",
+        "fundCode": "161219",
+        "fundName": "国投瑞银新兴产业混合",
+        "fundInterval": "j3y",
+        "incInfo": "{\"j3y\":-2.40,\"j1z\":2.72,\"j5n\":131.79,\"cll\":507.44,\"j1y\":-2.54,\"j3n\":95.26,\"j1n\":74.14,\"jnl\":56.14,\"j6y\":24.20}",
+        "fundLabel": "高风险",
+        "fundSlogan": "哈哈哈",
+        "subNum": "1000万",
+        "packetId": "kOmU0Q5Ls3SpjBq2QDqteEO7yB3XyW77f7rCngYhx4Ksn4ge4wBRFkiLOjq1h1Jd",
+        "packetName": "0.2元现金红包",
+        "packetImg": null,
+        "packetWorth": 0.2,
+        "packetType": "ALIPAY_CASH",
+        "packetNum": "10",
+        "packetLeftNum": null,
+        "packetStatus": 1,
+        "positionId": 18,
+        "companyCode": "GTRYFUND",
+        "companyName": "国投瑞银基金",
+        "companyLogo": "https://dollarcdn.cdollar.cn/xx/2020-11-10_feb1f84857ea9cc31eb10d948082235d",
+        "createTime": "2020-11-11 09:22:14"
+      }
+    }
+  }

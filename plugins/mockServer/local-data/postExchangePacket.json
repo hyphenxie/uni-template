@@ -1,0 +1,17 @@
+{
+  "errCode": "e0000",
+  "errMessage": "ok",
+  "body": {
+    "id": 56,
+    "userId": "2088802298938696",
+    "awardWorth": 0.01,
+    "awardName": "财运金红包",
+    "awardType": "ALIPAY_VOUCHER",
+    "awardWay": "EXCHANG",
+    "costCards": 2,
+    "days": "20201112",
+    "url": "alipays://platformapi/startapp?appId=20000021&b=c&partnerId=2088701768237685&serialNumber=2020111200073002693806WXIAKU",
+    "createTime": "2020-11-12 12:04:46",
+    "updateTime": "2020-11-12 12:04:46"
+  }
+}

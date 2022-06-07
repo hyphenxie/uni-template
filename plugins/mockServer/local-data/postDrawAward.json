@@ -1,0 +1,12 @@
+{
+  "errCode": "e0000",
+  "body": {
+    "award": {
+      "awardWorth": 1,
+      "awardName": "测试奖品",
+      "awardType": "ALIPAY_CASH"
+    },
+    "result": 0
+  },
+  "errMessage": "请定义mock数据"
+}

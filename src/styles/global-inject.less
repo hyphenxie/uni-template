@@ -1,0 +1,87 @@
+// @import 'flex.less';
+
+// variables
+// 字色
+@color-primary: #666;
+@color-red: #E52009;
+@color-green: green;
+// 字号：通常分为5等
+@fs-primary: 28upx;
+@fs-lg: 40upx;
+@fs-1: 30upx;
+@fs-2: 30upx;
+@fs-3: 28upx;
+@fs-4: 22upx;
+@fs-5: 20upx;
+
+
+// mixins
+
+.subsectionBox(@top, @repeat, @bottom, @topH, @bottomH) {
+  background:
+    url(@top) no-repeat 0 0,
+    url(@bottom) no-repeat 0 bottom;
+  background-size: 100% auto;
+  min-height: @topH + @bottomH;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid red;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(@repeat);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    z-index: 0;
+    background-color: red;
+    left: 0;
+    top: @topH;
+    bottom: @bottomH;
+    width: 100%;
+  }
+}
+
+// 工具
+.borderBottom(@color, @gap: 0) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2upx;
+    background-color: @color;
+    transform: scaleY(0.5);
+    transform-origin: left bottom;
+    left: @gap;
+    right: @gap;
+    bottom: 0upx;
+  }
+}
+
+.title-decorate(@url, @w, @h, @gap) {
+  display: flex;
+  align-items: center;
+
+  &::before {
+      content: '';
+      display: block;
+      background-image: url(@url);
+      background-size: cover;
+      width: @w;
+      height: @h;
+      margin-right: @gap;
+      transform: rotateY(180deg);
+      transform-origin: center;
+  }
+
+  &::after {
+      content: '';
+      display: block;
+      background-size: cover;
+      background-image: url(@url);
+      width: @w;
+      height: @h;
+      margin-left: @gap;
+  }
+}

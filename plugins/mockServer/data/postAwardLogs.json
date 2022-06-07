@@ -1,0 +1,25 @@
+{
+	"errCode":"e0000",
+	"errMessage":"success",
+	"body":{
+		"zycyAwardLogs":[
+			{
+				"id":960,
+				"userId":"81",
+				"packetType":"z8xixe",
+				"packetSource":"yirwyg",
+				"money":"r4jt79",
+				"packeName":"越泽.袁",
+				"jumpUrl":"www.xn---xn--rny-to5sm861a.net",
+				"img":"5flefg",
+				"day":"uuya90",
+				"cycleId":457,
+				"activityId":"81",
+				"send":"zo0rl5",
+				"credateTime":"2020-10-23",
+				"updateTime":"2020-10-23"
+			}
+		],
+		"totalMoney":"mh7nb1"
+	}
+}

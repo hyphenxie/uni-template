@@ -1,0 +1,40 @@
+@import './flex-box.min.css';
+// /* flex容器 */
+// /* use-case: .fb-{方向}-{主轴方向}-{侧轴方向} */
+// @dirSet: {
+//   row: row; /* Noncompliant; row is not part of the specifications */
+//   column: col; /* Noncompliant; column is not part of the specifications */
+// }
+// .mainSet() {
+//   flex-start: start; /* Noncompliant; flex-start is not part of the specifications */
+//   flex-end: end; /* Noncompliant; flex-end is not part of the specifications */
+//   space-between: between; /* Noncompliant; space-between is not part of the specifications */
+//   space-around: around; /* Noncompliant; space-around is not part of the specifications */
+//   center: center; /* Noncompliant; center is not part of the specifications */
+// }
+// .crossSet() {
+//   flex-start: start; /* Noncompliant; flex-start is not part of the specifications */
+//   flex-end: end; /* Noncompliant; flex-end is not part of the specifications */
+//   space-between: between; /* Noncompliant; space-between is not part of the specifications */
+//   space-around: around; /* Noncompliant; space-around is not part of the specifications */
+//   center: center; /* Noncompliant; center is not part of the specifications */
+// };
+
+// .fb-base {
+//   display: flex;
+// }
+
+// each(@dirSet, {
+//   each(.mainSet(), .(@mv, @mk, @mi) {
+//     each(.crossSet(), .(@cv, @ck, @ci) {
+//       @end:if(@cv=@mv, @mv, e('@{mv}-@{cv}'));
+//       .fb-@{value}-@{end} {
+//         display: flex !important;
+//         align-items: @ck;
+//         justify-content: @mk;
+//         flex-direction: @key;
+//       }
+//     });
+//   })
+// })
+

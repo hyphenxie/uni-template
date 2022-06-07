@@ -1,0 +1,30 @@
+{
+  "body": [
+    {
+      "awardName": "测试奖品",
+      "awardType": "ALIPAY_VOUCHER",
+      "awardWay": "",
+      "awardWorth": 0.01,
+      "costCards": 0,
+      "createTime": "",
+      "days": "10月23日 13:33",
+      "id": 0,
+      "updateTime": "",
+      "userId": ""
+    },
+    {
+      "awardName": "测试奖品",
+      "awardType": "ALIPAY_VOUCHER",
+      "awardWay": "EXCHANG",
+      "awardWorth": 0.01,
+      "costCards": 0,
+      "createTime": "",
+      "days": "10月23日 13:33",
+      "id": 0,
+      "updateTime": "",
+      "userId": ""
+    }
+  ],
+  "errCode": "e0000",
+  "errMessage": ""
+}

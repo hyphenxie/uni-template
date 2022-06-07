@@ -1,0 +1,25 @@
+{
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false
+    },
+    "usingComponents": true
+  },
+  "mp-alipay": {
+    "appid": "2018091861424216",
+    "usingComponents": true
+  },
+  "h5": {
+    "router": {
+      "mode": "hash",
+      "base": "/"
+    },
+    "publicPath": "./",
+    "template": "h5.template.html"
+  },
+  "uniStatistics": {  
+    "enable": false  
+  }
+}

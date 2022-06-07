@@ -1,0 +1,64 @@
+.page-body {
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 28upx;
+    padding-bottom: 70upx;
+    background-color: #CF3726;
+    background-image: url('https://dlcdn.cdollar.cn/frontend/projects/dollar-lhhd/answer-bg2.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    // .flex-col;
+    // .cross-center;
+    .awards-container {
+        // width: 668upx;
+        flex: 1;
+        height: 0upx; // 解决flex 1高度问题
+        margin-bottom: 40upx;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .awards-scroll-wrapper {
+        height: 100%;
+        margin-bottom: 20upx;
+    }
+    .total-money {
+        font-size: 46upx;
+        color: rgba(241, 25, 42, 1);
+        margin-bottom: 20upx;
+
+        &::after {
+            content: '元';
+            font-size: .7em;
+        }
+    }
+    .empty-box {
+        box-sizing: border-box;
+        border-radius: 15upx;
+        font-size: 28upx;
+        font-weight: 400;
+        color: #fff;
+        position: absolute;
+        top: 30upx;
+        left: 20upx;
+        bottom: 30upx;
+        right: 20upx;
+    }
+
+    .show-expried-packet {
+        font-size: 24upx;
+        font-weight: 300;
+        color: #FFFFFF;
+        opacity: 0.7;
+        margin: 20upx auto;
+        display: flex;
+        align-items: center;
+    }
+    .warning-tips {
+        font-size: 24upx;
+        font-weight: 300;
+        color: rgba(255, 255, 255, .7);
+        margin-bottom: 20upx;
+    }
+}
